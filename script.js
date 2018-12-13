@@ -14,3 +14,12 @@ div.forEach((square) => {
         square.style.background = 'blue';
     });
 });
+
+let button = document.querySelector('button');
+button.addEventListener('click',(e)=>{
+    div.forEach((square) => {
+        if(square.style.backgroundColor == 'blue'){
+            square.style.background = 'white';
+        }        //console.log(getComputedStyle(square,'background-color'));
+    })
+})
